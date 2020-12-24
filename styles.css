@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+/* <script type="text/javascript" src="http://www.muslimpro.com/muslimprowidget.js?cityid=1185241" async></script>*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", "sans-serif";
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 0.8em 5em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+}
+
+nav {
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  padding: 0.8em 1em;
+  border-radius: 25px;
+  font-size: 16px;
+  color: black;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #21d256;
+  opacity: 0.8;
+  border-radius: 25px;
+  color: white;
+  font-weight: bolder;
+}
+
+.landing {
+  height: auto;
+}
+
+.landing-pictures {
+  margin: 0;
+  height: 50vh;
+  display: flex;
+}
+
+.pic1 {
+  width: 33.3%;
+}
+
+.pic2 {
+  width: 33.3%;
+}
+
+.pic3 {
+  width: 33.4%;
+}
+
+.pic1 img,
+.pic2 img,
+.pic3 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: all 1s ease;
+}
+
+.pic1 img:hover,
+.pic2 img:hover,
+.pic3 img:hover {
+  opacity: 1;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3em;
+  text-align: center;
+  justify-content: center;
+}
+
+.intro img {
+  width: 20em;
+  padding-bottom: 0.8em;
+}
+
+.intro .greeting {
+  font-size: 2em;
+}
+
+.intro .name {
+  font-size: 1.4em;
+}
+
+.green-container {
+  width: 100%;
+  background-color: #1dea5b;
+  color: white;
+  margin-top: 5%;
+  padding: 1em 0 2em;
+  transform: skewY(-3deg);
+  outline: 1px solid transparent;
+}
+
+.green-container ul {
+  transform: skewY(3deg);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.prayer-times {
+  height: 330px;
+  width: 100%;
+  border: 1px solid #1dea5b;
+  border-radius: 25px;
+}
+
+.special-dates {
+  width: 100%;
+  height: 405px;
+  border: 1px solid #1dea5b;
+  border-radius: 25px;
+}
+
+.prayer-times:hover,
+.special-dates:hover {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.gray-container {
+  width: 100%;
+  background-color: #f6f6f6;
+  color: rgb(34, 34, 34);
+  margin-top: -3%;
+  padding: 4em 0 6em;
+}
+
+.gray-container h1 {
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.blue-container {
+  background-color: #59d4f4;
+  margin-top: -3%;
+  padding-bottom: 7em;
+  width: 100%;
+  color: white;
+  transform: skewY(3deg);
+  outline: 1px solid transparent;
+}
+
+.blue-container .container {
+  padding: 3em 0;
+  transform: skewY(-3deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blue-container h1 {
+  font-size: 1.8em;
+  padding-bottom: 0.4em;
+}
+
+.blue-container .cta {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  border: 3px solid white;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bolder;
+  border-radius: 25px;
+  padding: 0.5em;
+  width: 50%;
+  text-align: center;
+}
+
+.blue-container .cta span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.blue-container .cta span:after {
+  content: "\00bb";
+  font-size: 1.5em;
+  position: absolute;
+  opacity: 0;
+  right: -25px;
+  top: -8px;
+  transition: 0.5s;
+}
+
+.blue-container .cta:hover span {
+  padding-right: 25px;
+}
+
+.blue-container .cta:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.blue-container .cta:hover {
+  border: 3px solid #5611d6;
+  color: #5611d6;
+}
+
+.contact {
+  background-color: #413d41;
+  margin-top: -5.5em;
+  width: 100%;
+  transform: skewY(-2deg);
+  border: 1px solid transparent;
+  padding: 2em 0;
+}
+
+.contact .container {
+  transform: skewY(2deg);
+  color: white;
+}
+
+.contact .container h1 {
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.contact .container h2 {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.contact .container .contact-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.contact .container .contact-heading img {
+  width: 50px;
+}
+
+.contact .container ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 1em;
+}
+
+.contact .container li p {
+  padding-right: 1em;
+}
+
+.donation {
+  height: 100vh;
+}
+
+.donation h1 {
+  padding-top: 5em;
+  text-align: center;
+}
+
+.contact img:hover {
+  transition: all 1s ease;
+  animation: move 2s;
+}
+
+@keyframes move {
+  0% {
+    transform: rotateX(0deg);
+  }
+  25% {
+    transform: rotateX(45deg);
+  }
+  50% {
+    transform: rotateX(-45deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+footer {
+  background-color: #110c11;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin-top: -2em;
+  padding-top: 2em;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .container .back-to-top {
+  font-size: 45px;
+  margin: 0px;
+  animation: top 1s infinite alternate;
+}
+
+footer .container .back-to-top:hover {
+  color: #1dea5b;
+}
+
+@keyframes top {
+  from {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: translateY(10px);
+  }
+}
+@media screen and (max-width: 750px) {
+  .container {
+    padding: 0.8em 2em;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: #21d256;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    clip-path: circle(100px at 90% -15%);
+    -webkit-clip-path: circle(100px at 90% -15%);
+    transition: all 1s ease-out;
+    opacity: 0.8;
+    z-index: 10;
+  }
+
+  .nav-links li a {
+    transition: all 0.2s ease;
+  }
+
+  .nav-links li a:hover {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.3em;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin: 4px;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 5%;
+    transform: translate(-5%, -5%);
+    z-index: 11;
+    transition: all 0.8s ease;
+  }
+
+  .hamburger.open {
+    transform: rotate(180deg);
+  }
+
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -15%);
+    -webkit-clip-path: circle(1000px at 90% -15%);
+    opacity: 1;
+  }
+
+  .intro img {
+    width: 16em;
+  }
+
+  .green-container ul li h1 {
+    font-size: 25px;
+  }
+
+  .gray-container h1 {
+    font-size: 25px;
+  }
+
+  .gray-container p {
+    font-size: 16px;
+  }
+
+  .blue-container h1 {
+    font-size: 25px;
+  }
+
+  .blue-container .cta {
+    width: 70%;
+  }
+
+  .contact {
+    padding: 1em;
+  }
+
+  .contact .container h1 {
+    font-size: 25px;
+  }
+
+  .contact p {
+    text-align: center;
+  }
+
+  .contact .container ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
+  }
+
+  .contact .container .contact-heading {
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px auto;
+    padding: 0.8em;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .green-container ul {
+    flex-direction: column;
+  }
+
+  .green-container ul li:nth-child(2) {
+    padding: 2em;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .intro .greeting {
+    font-size: 1.5em;
+  }
+
+  .intro .name {
+    font-size: 1.1em;
+  }
+
+  .container {
+    padding: 0.8em 3em;
+  }
+
+  .pic1 img,
+  .pic2 img,
+  .pic3 img {
+    display: none;
+  }
+
+  .landing-pictures {
+    background: url("images/Masjid-closeup.jpg") center center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .container {
+    padding: 0.8em 12em;
+  }
+}
