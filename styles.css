@@ -164,6 +164,12 @@ ul {
   color: rgb(34, 34, 34);
   margin-top: -3%;
   padding: 4em 0 6em;
+  text-align: center;
+}
+
+.gray-container p {
+  font-size: 20px;
+  padding-top: 1em;
 }
 
 .gray-container h1 {
