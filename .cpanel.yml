@@ -1,0 +1,9 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home1/mosdoima/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp donation.html $DEPLOYPATH
+    - /bin/cp styles.css $DEPLOYPATH
+    - /bin/cp animations.js $DEPLOYPATH
+    - /bin/cp -R images $DEPLOYPATH
