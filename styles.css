@@ -366,6 +366,15 @@ footer .container .back-to-top:hover {
   .special-dates {
     width: 15em;
   }
+
+  footer .container {
+    margin: 0;
+    padding: 1.5em;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 750px) {
   .container {
@@ -381,8 +390,8 @@ footer .container .back-to-top:hover {
     right: 0;
     flex-direction: column;
     justify-content: space-evenly;
-    clip-path: circle(100px at 90% -20%);
-    -webkit-clip-path: circle(100px at 90% -20%);
+    clip-path: circle(100px at 90% -25%);
+    -webkit-clip-path: circle(100px at 90% -25%);
     transition: all 1s ease-out;
     opacity: 0.8;
     z-index: 10;
@@ -420,8 +429,8 @@ footer .container .back-to-top:hover {
   }
 
   .nav-links.open {
-    clip-path: circle(1000px at 90% -20%);
-    -webkit-clip-path: circle(1000px at 90% -20%);
+    clip-path: circle(1000px at 90% -25%);
+    -webkit-clip-path: circle(1000px at 90% -25%);
     opacity: 1;
   }
 
