@@ -59,6 +59,13 @@
                     <iframe class="special-dates" scrolling="no" src="https://www.islamicfinder.org/specialislamicdays"> </iframe>
                 </li>
             </ul>
+            <div class="weather">
+                <h1>Mosdoi's Weekly Forecast</h1>
+                <a class="weatherwidget-io" href="https://forecast7.com/en/24d0490d02/mosdoi/" data-icons="Climacons Animated" data-theme="sky" >Mosdoi, Bangladesh</a>
+                <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
+            </div>
         </div>
     </div>
 
@@ -78,28 +85,35 @@
 
     <div class="contact" id="contact">
         <div class="container">
-            <h1>Contact <br>Sowad Khan</h1>
-            <ul>
-                <li>
-                    <div class="contact-heading">
-                        <img src="images/adress.png" alt="Adress">
-                        <h2>Adress</h2>
-                    </div>
-                    <p>Mosdoi Baitol Aman Jamee Mosjid<br>Rajapur Rd, Bangladesh</be></p>
-                </li>
-                <li>
+            <h1>Contact Us</h1>
+            <ul class="main">
+                <ul class="sub">
+                    <li>
+                        <div class="contact-heading">
+                            <a href="https://www.google.com/maps/place/Mosdoi+Baitol+Aman+Jamee+Mosjid/@24.0441223,90.0231797,15z/data=!4m5!3m4!1s0x0:0xd45bafea7692fb46!8m2!3d24.0441223!4d90.0231797" target="_blank">
+                                <img class="adress" src="images/adress.png" alt="Adress"></a>
+                            <h2>Adress</h2>
+                        </div>
+                        <p>Mosdoi Baitol Aman Jamee Mosjid</p>
+                        <p>Rajapur Rd, Bangladesh</p>
+                    </li>
+                    <li>
+                        <div class="contact-heading">
+                            <img src="images/phone.png" alt="Phone">
+                            <h2>Phone</h2>
+                        </div>
+                        <p>TBD</p>
+                    </li>
+                </ul>
+                <li class="email">
                     <div class="contact-heading">
                         <img src="images/email.png" alt="Email">
                         <h2>Email</h2>
                     </div>
-                    <p>sowadkhan912@gmail.com</p>
-                </li>
-                <li>
-                    <div class="contact-heading">
-                        <img src="images/phone.png" alt="Phone">
-                        <h2>Phone</h2>
-                    </div>
-                    <p>TBD</p>
+                    <p>For matters regarding the mosque and usage, fundraising, 
+                        donations, suggestions, etc, contact our Masjid Administration at <a href="mailto: admin@mosdoimasjid.com">admin@mosdoimasjid.com</a></p>
+                    <p>For questions related to islam or specifically for the imam, email <a href="mailto: imam@mosdoimasjid.com">imam@mosdoimasjid.com</a></p>
+                    <p>For questions related to the website, contact the developer at <a href="mailto: sowadkhan912@gmail.com">sowadkhan912@gmail.com</a></p>
                 </li>
             </ul>
         </div>
@@ -117,7 +131,8 @@
             </ul>
         </div>
     </footer>
-
-<script src="animations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="animations.js"></script>
 </body>
 </html>

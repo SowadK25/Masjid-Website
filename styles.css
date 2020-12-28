@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-/* <script type="text/javascript" src="http://www.muslimpro.com/muslimprowidget.js?cityid=1185241" async></script>*/
 html {
   scroll-behavior: smooth;
 }
@@ -8,10 +7,12 @@ html {
 body {
   margin: 0;
   font-family: "Montserrat", "sans-serif";
+  overflow-x: hidden;
 }
 
 .container {
   padding: 0.8em 5em;
+  max-width: 100%;
 }
 
 header {
@@ -39,6 +40,7 @@ ul {
   display: flex;
   height: 100%;
   align-items: center;
+  max-width: 100%;
 }
 
 .nav-links li a {
@@ -61,6 +63,8 @@ ul {
 
 .landing {
   height: auto;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .landing-pictures {
@@ -137,7 +141,25 @@ ul {
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
-  padding-bottom: 2em;
+}
+
+.weather {
+  transform: skewY(3deg);
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 3em;
+  text-align: center;
+}
+
+.weather a {
+  border-radius: 25px;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.weather h1 {
+  padding-bottom: 0.2em;
 }
 
 .prayer-times {
@@ -145,18 +167,23 @@ ul {
   width: 100%;
   border: 1px solid #1dea5b;
   border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
 }
 
 .special-dates {
   width: 100%;
-  height: 405px;
+  height: 415px;
   border: 1px solid #1dea5b;
   border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
 }
 
 .prayer-times:hover,
-.special-dates:hover {
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.special-dates:hover,
+.weather a:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .gray-container {
@@ -184,6 +211,7 @@ ul {
   color: white;
   transform: skewY(3deg);
   outline: 1px solid transparent;
+  overflow: hidden;
 }
 
 .blue-container .container {
@@ -250,7 +278,7 @@ ul {
   margin-top: -5.5em;
   transform: skewY(-2deg);
   border: 1px solid transparent;
-  padding: 2em 0;
+  padding: 1em 0;
 }
 
 .contact .container {
@@ -279,15 +307,27 @@ ul {
   width: 50px;
 }
 
-.contact .container ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding-bottom: 1em;
+.contact .container .contact-heading .adress {
+  cursor: pointer;
 }
 
-.contact .container li p {
-  padding-right: 1em;
+.contact .container .main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 0.5em 0;
+}
+
+.contact .container .sub {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 30em;
+}
+
+.contact .container ul li {
+  padding: 1em 0;
 }
 
 .donation {
@@ -302,6 +342,17 @@ ul {
 .contact img:hover {
   transition: all 1s ease;
   animation: move 2s;
+}
+
+.contact .container a {
+  text-decoration: none;
+  color: #7cd556;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.contact .container a:hover {
+  color: #80e753;
 }
 
 @keyframes move {
@@ -365,6 +416,10 @@ footer .container .back-to-top:hover {
     padding: 1em 1em;
   }
 
+  .green-container .container {
+    padding: 1em 1em;
+  }
+
   .prayer-times {
     width: 15em;
   }
@@ -380,6 +435,21 @@ footer .container .back-to-top:hover {
 
   footer p {
     font-size: 12px;
+  }
+
+  .contact .container {
+    padding: 0.5em 0.5em;
+  }
+  .contact p {
+    font-size: 14px;
+  }
+
+  .contact .container .main li:nth-child(2) p {
+    padding: 0.5em 0;
+  }
+
+  .contact .contact-heading h2 {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 750px) {
@@ -452,6 +522,10 @@ footer .container .back-to-top:hover {
     font-size: 25px;
   }
 
+  .weather h1 {
+    font-size: 25px;
+  }
+
   .gray-container p {
     font-size: 16px;
   }
@@ -476,11 +550,17 @@ footer .container .back-to-top:hover {
     text-align: center;
   }
 
-  .contact .container ul {
+  .contact .container .main {
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em 0;
+  }
+
+  .contact .container .sub {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1em 0;
+    width: auto;
   }
 
   .contact .container .contact-heading {
